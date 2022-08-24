@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Application
+Bundle-SymbolicName: com.spintech.ma6ic.application;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.spintech.ma6ic.application.Activator
+Bundle-Vendor: SPINTECH
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.spintech.ma6ic.ui
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .

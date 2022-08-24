@@ -1,0 +1,20 @@
+TelemetryAdapter,Power,Power of the adapter,4,W
+TelemetryAdapter,Active interface,The interface connected with the subsystem,SpaceWire,-	
+TelemetryAdapter,Data rate,Speed of the connected interface,10,Mbps
+TelemetryAdapter,Subsystem id,-,72,- 
+TelemetryAdapter,Number of packet received,Data received from the sub system,205,- 	
+TelemetryAdapter,Voltage,Voltage of the adapter,16,V
+TelemetryAdapter,Memory in use,Type of memory,SRAM,-	
+TelemetryAdapter,Adapter id,-,56,-	
+TelemetryAdapter,Free memory,Memory left in the adapter,1600K,-	
+TelemetryAdapter,Status,-,Active,-
+TelemetrySubsystem,Subsystem name,Type of subsystem,Star tracker,-	
+TelemetrySubsystem,Supplier,Manufacturer name,Sodern,-	
+TelemetrySubsystem,Status,Initialisation of,Init,-	
+TelemetrySubsystem,Transmitted packet,Packets transmitted to the adapter,102,- 	
+TelemetrySubsystem,Received packet,Packets received from the adapter,305,- 	
+TelemetrySubsystem,Data rate,Data rate of the subsystem,5,Mbps
+TelemetrySubsystem,Data sheet,-,55,- 	
+TelemetrySubsystem,Version,-,7,- 
+cmdHis,Initialisation of the subsystem,Executed
+cmdHis,Storing the data of the subsystem,In progress

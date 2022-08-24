@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.spintech.ma6ic.application.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.spintech.ma6ic.application.Perspective"
+            id="com.spintech.ma6ic.application.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.spintech.ma6ic.application.application"
+            name="ma61c">
+         <property
+               name="appName"
+               value="ma61c">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/spinAboutUs.png">
+         </property>
+         <property
+               name="aboutText"
+               value="Space Products and Innovation UG is a company whose goal is to spin in technology and concepts from outside the aerospace industry.&#x0A;&#x0A;Currenty, the team is focusing on a multi-purpose adapter that applies the plug and play concept to satellite manufacturing and sub-system integration.&#x0A;&#x0A;The adapter shall include hardware and software that connects existing satellite sub-system connectors and integrates their software without the need to install additional drivers, saving time in spacecraft design and manufacturing.&#x0A;&#x0A;SPIn achievements so far include winning the first prize at INNOSpace Masters ESA BIC Challenge 2016 and Startup Weekend Space in Bremen 2015.&#x0A;&#x0A;SPiN is also listed as top 70 Startups at Pioneers Festival 2016.">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.spintech.ma6ic.application/css/default.css">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/spin.png">
+         </property>
+      </product>
+   </extension>
+
+
+</plugin>

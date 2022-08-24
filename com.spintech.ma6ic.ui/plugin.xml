@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.spintech.ma6ic.ui.perspectives.MA6ICPerspective"
+            id="com.spintech.ma6ic.ui.perspectives.MA6ICPerspective"
+            name="MA6IC Perspective">
+      </perspective>
+      <perspective
+            class="com.spintech.ma6ic.ui.perspectives.TreeViewPerspective"
+            id="com.spintech.ma6ic.ui.perspective.treeViewPerspective"
+            name="TreeView Perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.spintech.ma6ic.ui.views.InterfaceViewOld"
+            id="com.spintech.ma6ic.ui.views.InterfaceView"
+            name="Interface"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.CommandsView"
+            id="com.spintech.ma6ic.ui.views.CommandsView"
+            name="Commands"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.TelemetryAdapterView"
+            id="com.spintech.ma6ic.ui.views.TelemetryAdapterView"
+            name="Telemetry Adapter"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.PacketView"
+            id="com.spintech.ma6ic.ui.views.PacketView"
+            name="Command"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.TelemetrySubsystemView"
+            id="com.spintech.ma6ic.ui.views.TelemetrySubsystemView"
+            name="Telemetry Subsystem"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.CommandHistoryView"
+            id="com.spintech.ma6ic.ui.views.CommandHistoryView"
+            name="Command History"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.GraphView"
+            id="com.spintech.ma6ic.ui.views.GraphView"
+            name="Graph View"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.UnknownParametersView"
+            id="com.spintech.ma6ic.ui.views.UnknownParametersView"
+            name="Unknown Parameters"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.ErrorView"
+            id="com.spintech.ma6ic.ui.views.ErrorView"
+            name="Error View"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.InterfaceViewNew"
+            id="com.spintech.ma6ic.ui.interfaceNew"
+            name="Interface New"
+            restorable="true">
+      </view>
+      <view
+            class="com.spintech.ma6ic.ui.views.GraphViewNew"
+            id="com.spintech.ma6ic.ui.views.GraphViewNew"
+            name="Graph View New"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.spintech.ma6ic.handlers.LoadParameterHandler"
+            id="com.spintech.ma6ic.ui.command.start"
+            name="Start">
+      </command> 
+      <command
+            defaultHandler="com.spintech.ma6ic.handlers.StopReceivingMessagesHandler"
+            id="com.spintech.ma6ic.ui.command.stop"
+            name="Stop">
+      </command>
+      <command
+            defaultHandler="com.spintech.ma6ic.handlers.PauseReadingMessagesHandler"
+            id="com.spintech.ma6ic.ui.command.pause"
+            name="Pause">
+      </command>
+      <command
+            defaultHandler="com.spintech.ma6ic.handlers.PlayReadingMessagesHandler"
+            id="com.spintech.ma6ic.ui.command.play"
+            name="Play">
+      </command>
+      <command
+            defaultHandler="com.spintech.ma6ic.handlers.TwoDViewHandler"
+            id="com.spintech.ma6ic.ui.command.2dView"
+            name="2dView">
+      </command>
+      <command
+            defaultHandler="com.spintech.ma6ic.handlers.TreeViewhandler"
+            id="com.spintech.ma6ic.ui.command.treeView"
+            name="treeView">
+      </command>
+      <command
+            defaultHandler="com.spintech.ma6ic.handlers.TelemetryConfigHandler"
+            id="com.spintech.ma6ic.ui.command.telemetryConfig"
+            name="telemetryConfig">
+      </command>
+      <command
+            defaultHandler="com.spintech.ma6ic.handlers.HelpContentHandler"
+            id="com.spintech.ma6ic.ui.helpContents"
+            name="helpContents">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.spintech.ma6ic.ui.toolbar1">
+        <!--    <command
+                  commandId="com.spintech.ma6ic.ui.command.start"
+                  icon="images/synced.gif"
+                  style="push">
+            </command> -->
+            <command
+                  commandId="com.spintech.ma6ic.ui.command.stop"
+                  icon="images/terminate.gif"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.spintech.ma6ic.ui.command.pause"
+                  icon="images/disconnect_co.gif"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.spintech.ma6ic.ui.command.play"
+                  icon="images/continue.gif"
+                  style="push">
+            </command>
+         </toolbar>
+         <toolbar
+               id="com.spintech.ma6ic.ui.toolbar.perspective">
+            <command
+                  commandId="com.spintech.ma6ic.ui.command.2dView"
+                  label="2D View"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.spintech.ma6ic.ui.command.treeView"
+                  label="Tree View"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:file?before=additions">
+         <command
+               commandId="com.spintech.ma6ic.ui.command.telemetryConfig"
+               label="Telemetry Config"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:help?before=additions">
+         <command
+               commandId="com.spintech.ma6ic.ui.helpContents"
+               label="Help Contents"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.spintech.ma6ic.ui.preferences.BackupPreferencePage"
+            id="com.spintech.ma6ic.ui.preferences.BackupPreferencePage"
+            name="Backup">
+      </page>
+      <page
+            class="com.spintech.ma6ic.ui.preferences.APIConfigPreferencePage"
+            id="com.spintech.ma6ic.ui.preferences.APIConfigPreferencePage"
+            name="API Configuration">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.spintech.ma6ic.ui.preferences.MA6ICProjectBackUpInitializer">
+      </initializer>
+   </extension>
+
+</plugin>

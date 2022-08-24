@@ -1,0 +1,78 @@
+Composite Button,GridButton {
+  color: rgb(255,255,255);
+    font: Euphemia EUCAS 8px;
+     background-color:rgb(115,117,128); /*Light Dark Grey */
+}
+
+Composite Label {
+    color: rgb(255,255,255);
+    font: Euphemia EUCAS 8px;
+     background-color:rgb(134,140,152); /*Light grey */
+}
+
+
+.MPart Table {
+  color: rgb(255,255,255);
+    font: Euphemia EUCAS 8px;
+    background-color: rgb(134,140,152); /*Light grey */
+}
+
+.MPart Composite
+ {
+    background-color:rgb(134,140,152); /*Light grey */
+	 font: Euphemia EUCAS 8px;
+	  color: rgb(255,255,255);
+}
+
+.MTrimBar {
+        background-color: #515658;
+   font: Euphemia EUCAS 8px;
+	  color: rgb(255,255,255);
+}
+
+CoolBar,CBanner,CTabFolder{
+background-color: #515658;
+ font: Euphemia EUCAS 8px;
+	  color: rgb(255,255,255);
+}
+
+ToolBar{
+	background-color: #515658;
+	 font: Euphemia EUCAS 8px;
+	  color: rgb(255,255,255);
+}
+
+.MPartSashContainer {
+    background-color:rgb(115,117,128); /*Light Dark Grey */
+	font: Euphemia EUCAS 8px;
+	 color: rgb(255,255,255);
+  
+}
+
+.MPartStack {
+  swt-tab-renderer: null;
+  swt-selected-tabs-background: rgb(115,117,128) 100%; /*Light Dark Grey */ 
+  swt-shadow-visible: false;
+  swt-simple: false;
+  swt-mru-visible: false;
+  font: Euphemia EUCAS 8px;
+
+   
+   }
+ 
+.MPartStack.active {
+    swt-inner-keyline-color: #000000;
+    swt-tab-outline: #6a6c71;
+    swt-outer-keyline-color: #6a6c71;
+    swt-unselected-tabs-color: #5f6063;
+    swt-selected-tab-fill: #272727;
+    chrome-selected-tab-fill-highlight: #484848;
+    chrome-selected-tab-color: #ffffff;
+    chrome-unselected-tab-color: #A0A0A0;
+    chrome-shiney-shadow: false;
+} 
+
+
+#MyCSSTagForComposite {
+	background-color:rgb(134,140,152); /*Light grey */
+}

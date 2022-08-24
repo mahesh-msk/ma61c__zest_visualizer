@@ -1,0 +1,12 @@
+Composite Label { font: Calibri 10px; color: rgb(255,0,255) }
+Composite { color: #00ff40 }
+SashForm { color: #008000 }
+Shell {
+    swt-background-mode: default;
+    background-color: red orange yellow green orange 30% 60% 75% 95%
+}
+
+.MPartStack {
+    font-size: 22px;
+    color: orange;
+}

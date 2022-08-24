@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.spintech.ma6ic.model/src" modelPluginID="com.spintech.ma6ic.model"
+    modelName="Ma6ic" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>ma6ic.ecore</foreignModel>
+  <genPackages prefix="Ma6icmodel" disposableProviderFactory="true" ecorePackage="ma6ic.ecore#/">
+    <genClasses ecoreClass="ma6ic.ecore#//Ma6ic">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Ma6ic/computer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Ma6ic/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Ma6ic/interface"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Ma6ic/adapter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Ma6ic/subsystem"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Ma6ic/connection"/>
+    </genClasses>
+    <genClasses ecoreClass="ma6ic.ecore#//Computer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Computer/command"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Computer/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ma6ic.ecore#//Adapter">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Adapter/telemetry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Adapter/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ma6ic.ecore#//Subsystem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Subsystem/telemetry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Subsystem/Packet"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Subsystem/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ma6ic.ecore#//Command">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Command/adapter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Command/telecommand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Command/executionStatus"/>
+    </genClasses>
+    <genClasses ecoreClass="ma6ic.ecore#//Telemetry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Telemetry/parameter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Telemetry/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Telemetry/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Telemetry/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="ma6ic.ecore#//Packet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Packet/parameter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Packet/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Packet/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Packet/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="ma6ic.ecore#//Interface">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Interface/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Interface/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Interface/source"/>
+    </genClasses>
+    <genClasses ecoreClass="ma6ic.ecore#//Connection">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Connection/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ma6ic.ecore#//Connection/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ma6ic.ecore#//Connection/source"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
